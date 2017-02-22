@@ -1,7 +1,7 @@
 <?php
 
 // 管理者のメールアドレス
-$contact = "";
+$admin = "";
 
 // 入力されたメールアドレス
 $to = $_POST['email'];
@@ -19,7 +19,7 @@ EOT;
 
 
 mb_send_mail($to, 'お問い合わせの内容の送付', $content);
-mb_send_mail($content, 'お問い合わせのお知らせ', $content);
+mb_send_mail($admin, 'お問い合わせのお知らせ', $content);
 ?>
 <!DOCTYPE html>
 <html lang="ja">
